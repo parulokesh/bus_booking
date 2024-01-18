@@ -40,7 +40,7 @@ pipeline {
         stage('deploy') {
             steps {
                 sh 'ssh root@172.31.14.255'
-                sh "scp /home/slave4/workspace/bus_booking_main/target/bus-booking-app-1.0-SNAPSHOT.jar root@172.31.14.255:/opt/apache-tomcat-8.5.98/webapps/"
+                sh "scp /home/slave4/workspace/bus_booking_develop/target/bus-booking-app-1.0-SNAPSHOT.jar root@172.31.14.255:/opt/apache-tomcat-8.5.98/webapps/"
             }
         }
     }  
